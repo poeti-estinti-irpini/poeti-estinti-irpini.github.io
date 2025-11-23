@@ -101,3 +101,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor/bundle/ # <--- AGGIUNGI QUESTA RIGA
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/plugins/
