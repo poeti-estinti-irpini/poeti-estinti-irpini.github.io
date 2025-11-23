@@ -4,6 +4,8 @@ title: Poeti Estinti Irpini
 permalink: /
 ---
 
+<a href="{{ site.baseurl }}/archive" style="text-decoration: none;font-weight: bold;">Leggi le pubblicazioni...</a> ✒️
+
 I Poeti Estinti: Custodi della Parola e dell'Identità Irpina
 **"I Poeti Estinti"** è un'associazione culturale no profit nata con l'intento di preservare, promuovere e diffondere la cultura in tutte le sue forme, con una profonda attenzione alle radici e al patrimonio immateriale del territorio irpino.
 
