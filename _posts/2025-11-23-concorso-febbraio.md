@@ -2,7 +2,8 @@
 layout: post
 title:  Concorso Epistula Amoris 🩷
 date:   2025-11-23 14:50:37 +0100
-categories: [concorso, poesie]
+author: Poeti Estinti
+categories: [concorso]
 ---
 
 Regolamento concorso - 14 febbraio 2026
@@ -25,4 +26,4 @@ Il premio dovrà essere ritirato presso la Biblioteca Casa Molinari.Orari di rit
 Lunedì o mercoledì dopo le 10:00 fino alle 12:00 oppure tel 3343335256.
 
 *Contatti*:
-Per informazioni e invio foto: poeti.estinti.irpini@hotmail.com 
+Per informazioni e invio foto: <b>poeti.estinti.irpini@hotmail.com </b>

@@ -65,6 +65,11 @@ baseurl: ""
 
 permalink: /:title/
 
+collections:
+  poesie:
+    output: true
+    permalink: /poesie/:path/
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 

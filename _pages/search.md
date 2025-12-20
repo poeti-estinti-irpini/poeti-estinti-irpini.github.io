@@ -15,7 +15,11 @@ permalink: /search/
     SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    searchResultTemplate: '<div style="text-align: left !important;"><a href="{url}"><h1 style="text-align:left !important;">{title}</h1></a><span style="text-align:left !important;">{date}</span></div>',
+    searchResultTemplate: `<div class="search-result-item">
+      <small class="category-tag">{category}</small>
+      <a href="{url}">{title}</a>
+      <p class="author-hint">di {author}</p>
+    </div>`,
     json: '{{ site.baseurl }}/search.json'
     });
 </script>

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="poesia-container">
+  <header class="poesia-header">
+    <h1 class="poesia-title">{{ page.title }}</h1>
+    <div class="poesia-meta">
+      <span class="poesia-author">di {{ page.author | default: "I Poeti Estinti" }}</span>
+      {% if page.luogo %}
+        <span class="poesia-location"> — {{ page.luogo }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="poesia-content">
+    {{ content }}
+  </div>
+
+  <footer class="poesia-footer">
+    <div class="divider">❦</div>
+    <a href="/poesie/" class="back-link">← Torna alle poesie</a>
+  </footer>
+</article>

@@ -1,13 +1,30 @@
 ---
 ---
 [
-  {% for post in site.posts %}
-    {
+  {% assign first_item = true %}
 
-      "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html |  escape | strip }}{%endif%}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "category" : "{{ post.categories | join: ', '}}",
-      "date"     : "{{ post.date | date: "%B %e, %Y" }}"
-    } {% unless forloop.last %},{% endunless %}
+  {% comment %} --- CICLO POST --- {% endcomment %}
+  {% for item in site.posts %}
+    {% unless first_item %},{% endunless %}
+    {
+      "title"    : {{ item.title | jsonify }},
+      "url"      : {{ item.url | relative_url | jsonify }},
+      "author"   : {{ item.author | jsonify }},
+      "category" : "{{ item.categories | join: ', '}}",
+      "date"     : {{ item.date | date: "%B %d, %Y" | jsonify }}
+    }
+    {% assign first_item = false %}
+  {% endfor %}
+
+  {% comment %} --- CICLO POESIE --- {% endcomment %}
+  {% for item in site.poesie %}
+    {% unless first_item %},{% endunless %}
+    {
+      "title"    : {{ item.title | jsonify }},
+      "author"   : {{ item.author | jsonify }},
+      "url"      : {{ item.url | relative_url | jsonify }},
+      "category" : "{{ item.categories | join: ', '}}"
+    }
+    {% assign first_item = false %}
   {% endfor %}
 ]

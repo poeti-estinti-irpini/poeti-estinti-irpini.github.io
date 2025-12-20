@@ -5,29 +5,27 @@ title: Archivio pubblicazioni
 ---
 
 
-<div id="archives">
-  <section id="archive">
-     <h3>Most Recent Posts</h3>
-      {%for post in site.posts %}
-      {% unless post.next %}
-      <ul class="this">
-          {% else %}
-          {% capture month %}{{ post.date | date: '%B %Y' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
-          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-          {% if year != nyear %}
-      </ul>
-      <h2 style="text-align:left;">{{ post.date | date: '%Y' }}</h2>
-      <ul class="past">
-          {% endif %}
-          {% if month != nmonth %}
-          <h3 style="text-align:left;">{{ post.date | date: '%B %Y' }}</h3>
-          {% endif %}
-          {% endunless %}
-          <p><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</p>
-          {% endfor %}
-      </ul>
-    <h3>Oldest Posts</h3>
-  </section>
+<div class="pubblicazioni-grid">
+  {% for post in site.posts %}
+    <article class="pubblicazione-card card-{{ post.category | slugify }}">
+      <div class="card-category">
+        {% if post.categories contains "concorso" %} 🏆 Concorso
+        {% elsif post.categories contains "eventi" %} 📍 Evento
+        {% else %} 📰 Notizia
+        {% endif %}
+      </div>
+      
+      <div class="card-content">
+        <h2 class="card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="card-date">{{ post.date | date: "%-d %B %Y" }}</p>
+        <p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </div>
+
+      <div class="card-footer">
+        <a href="{{ post.url | relative_url }}" class="read-more">Leggi tutto →</a>
+      </div>
+    </article>
+  {% endfor %}
 </div>

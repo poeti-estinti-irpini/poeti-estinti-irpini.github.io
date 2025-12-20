@@ -2,6 +2,7 @@
 layout: post
 title:  Informativa e Scopi
 date:   2025-11-23 14:43:37 +0100
+author: Poeti Estinti
 categories: [informativa, scopi, sede]
 ---
 

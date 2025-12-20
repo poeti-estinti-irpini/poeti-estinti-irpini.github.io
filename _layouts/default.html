@@ -30,6 +30,7 @@
             <nav>
               <a href="{{ site.baseurl }}/">Home</a>
               <a href="{{ site.baseurl }}/search">Cerca</a>
+              <a href="{{ site.baseurl }}/poesie">Poesie</a>
               <a href="{{ site.baseurl }}/archive">Pubblicazioni</a>
             </nav>
           </header>
@@ -42,14 +43,16 @@
         </div>
       </div>
 
-      <div class="wrapper-footer">
-        <div class="container">
-          <footer class="footer">
-            {% include svg-icons.html %}
-          </footer>
-        </div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <p>Scrivici: <a href="mailto:info@ipoetiestinti.it">poeti.estinti.irpini@hotmail.com</a></p>
+      <div class="social-links">
+          {% include svg-icons.html %}
       </div>
     </div>
+  </div>
+</footer>
 
     {% include analytics.html %}
   </body>

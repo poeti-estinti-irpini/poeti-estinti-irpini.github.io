@@ -1,17 +1,15 @@
 ---
 layout: page
-title: Poeti Estinti Irpini
+title: 
 permalink: /
 ---
 
-<a href="{{ site.baseurl }}/archive" style="text-decoration: none;font-weight: bold;">Leggi le pubblicazioni...</a> ✒️
-
 <div style="text-align: center;">
-  <img src="../images/banner.jpg" width="600">
+  <img src="../images/banner.jpg" width="500">
 </div>
 
 
-**"I Poeti Estinti"** è un'associazione culturale no profit nata con l'intento di preservare, promuovere e diffondere la cultura in tutte le sue forme, con una profonda attenzione alle radici e al patrimonio immateriale del territorio irpino.
+**"I Poeti Estinti Irpini"** è un'associazione culturale no profit nata con l'intento di preservare, promuovere e diffondere la cultura in tutte le sue forme, con una profonda attenzione alle radici e al patrimonio immateriale del territorio irpino.
 
 Cosa facciamo:
 
@@ -21,4 +19,21 @@ Cosa facciamo:
 
 - *Valorizzazione dell'Irpinia*: Il nostro impegno principale è diffondere la ricchezza storica, letteraria e paesaggistica dell'Irpinia. Tramite i nostri eventi, trasformiamo luoghi e tradizioni locali in palcoscenici vivi per la parola e l'arte.
 
-Crediamo che la cultura sia il motore dello sviluppo sociale e che ogni comunità debba conoscere e celebrare la propria storia. Unisciti a noi per tenere viva la fiamma della parola!
+<section class="home-poesie">
+  <h2 class="section-title">Ultimi Versi dall'Irpinia</h2>
+  <div class="poesie-mini-grid">
+    {% for poesia in site.poesie limit:4 %}
+      <a href="{{ poesia.url }}" class="poesia-card-mini">
+        <h3>{{ poesia.title }}</h3>
+        <h4>{{ poesia.author }}</h4>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-number">{{ site.poesie.size }}</span>
+    <span class="stat-label">Poesie Raccolte</span>
+  </div>
+</div>
