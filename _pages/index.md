@@ -28,7 +28,7 @@ Cosa facciamo:
         <h4>{{ poesia.author }}</h4>
       </a>
     {% endfor %}
-  </div>
+  </div>  
 </section>
 
 <div class="stats-bar">
@@ -36,4 +36,7 @@ Cosa facciamo:
     <span class="stat-number">{{ site.poesie.size }}</span>
     <span class="stat-label">Poesie Raccolte</span>
   </div>
+  <div style="text-align: center;margin-top:1.5rem;margin-left:1rem">
+      <a class="link-leggile" href='{{ site.baseurl }}/poesie'>Leggile tutte...</a>
+  </div>  
 </div>

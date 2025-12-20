@@ -15,10 +15,3 @@ Nel silenzio della notte nascosta,
 il nostro fiato non fa neanche una sosta.
 Tra binari di sogni e baci rubati,
 la vita si tinge di istanti ricamati
-I poeti estinti irpini
-[18/12, 05:08] Pelosauro: Vivo questo paesaggio
-e dalla finestra del tempo
-immergo lo sguardo
-in mezzo a queste amare zolle
-e nel cielo,
-io che da questa terra ho preso vita
