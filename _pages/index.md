@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div style="text-align: center;">
-  <img src="../images/banner.jpg" width="500">
+  <img src="../images/logo.jpeg" width="220">
 </div>
 
 
