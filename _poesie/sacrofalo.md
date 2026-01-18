@@ -1,12 +1,12 @@
 ---
 layout: poesia
-title: "Il sacro falò"
+title: "Fuoco Immacolato"
 author: "I Poeti Estinti Irpini"
 categories: [poesie]
 ---
 
 Con il freddo, la pioggia, la neve o il vento,
-si ripete ogni anno la prima settimana d'Avvento...
+si ripete ogni anno la seconda settimana d'Avvento...
 un'antica usanza, una sacra tradizione
 l'accensione dei falò dell'Immacolata Concezione!
 Tutto il paese in dolce fermento pe fa la catasta bella..
